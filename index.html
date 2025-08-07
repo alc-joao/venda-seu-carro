@@ -4,13 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Venda seu Carro - Udemy</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <title>Venda seu Carro - Udemy</title>
 </head>
 <body>
 
     <div class="container">
         <div class="header">
             <h3>Cadastre seu veículo para vender rápido!</h3>
+            <div><img class="icon" src="image/icon.png" alt="image icon"></div>
         </div>
         <div class="form-container">
             <div class="form-header">
@@ -129,8 +133,45 @@
                                   <label for="reverse_camera">Câmera de Ré</label>
                             </li>
                           </ul>
-                    <div>
-                        <input type="submit" value="Enviar">
+                        </div>
+
+                        <div class="optional-box">
+                          <ul class="optional-list">
+                            <li><input
+                                 type="checkbox" 
+                                 id="lane_assist" 
+                                 name="optional[]" 
+                                 value="lane_assist">
+                                  <label for="lane_assist">Assistente de Pista</label>
+                            </li>
+                            <li><input
+                                 type="checkbox" 
+                                 id="keylass" 
+                                 name="optional[]" 
+                                 value="keylass">
+                                  <label for="keylass">Partida Keyless</label>
+                            </li>
+                            <li><input
+                                 type="checkbox" 
+                                 id="smartphone" 
+                                 name="optional[]" 
+                                 value="smartphone">
+                                  <label for="smartphone">Integração com Celular</label>
+                            </li>
+                            <li><input
+                                 type="checkbox" 
+                                 id="leather_seat" 
+                                 name="optional[]" 
+                                 value="leather_seat">
+                                  <label for="leather_seat">Banco de Couro</label>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="box-input">
+                            <p>Fotos do Carro <span class="required-field">*</span></p>
+                            <input type="file" multiple accept="image/png, image/jpg" id="images" name="images" required>
+                        </div>
+                        <input type="submit" value="Enviar" class="btn-submit">
                     </div>
                 </div>
                 </form>
